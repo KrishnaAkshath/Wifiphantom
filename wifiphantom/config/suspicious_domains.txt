@@ -1,0 +1,2 @@
+malware-test-site.com
+example-bad.com
