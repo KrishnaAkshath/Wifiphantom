@@ -31,3 +31,56 @@
 ```bash
 git clone https://github.com/krishnaakshath/wifiphantom.git
 cd wifiphantom
+```
+
+### 2. Setup Virtual Environment
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+
+---
+
+### 3. Get MaxMind GeoIP Database
+Register at MaxMind
+Download GeoLite2-City.mmdb and place it in geoip/
+
+---
+
+🔄 How to Run
+
+Instead of running 3 terminals, use the single command:
+```bash
+chmod +x run.sh
+sudo ./run.sh
+This runs:
+```
+🛰️ DNS Sniffer (monitor/sniffer.py)
+📶 SSID Scanner (monitor/ssid_sniffer.py)
+🌍 Web Dashboard (dashboard/app.py)
+
+---
+
+wifiphantom/
+├── dashboard/
+│   └── app.py, templates/
+├── geoip/
+│   └── GeoLite2-City.mmdb
+├── logs/
+│   └── dns.log, ssid.log
+├── monitor/
+│   ├── sniffer.py
+│   └── ssid_sniffer.py
+├── config/
+│   └── suspicious_domains.txt
+├── run.sh
+└── README.md
+
+------
+
+🛡️ License
+
+This project is licensed under the MIT License. See LICENSE for details.
+
+-------
+
+
